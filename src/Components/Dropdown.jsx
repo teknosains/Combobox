@@ -37,7 +37,11 @@ function getFilteredItems(options, selectedItems, inputValue) {
 }
 
 export default function Dropdown({ 
-  options, usePortal = false, alwaysOpen = false, clearAll = true,
+  options, 
+  usePortal = false, 
+  alwaysOpen = false, 
+  clearAll = true, 
+  multiSelect = true
 }) {
   const dropdownRef = React.useRef(null)
   const menuRef = React.useRef(null)
@@ -49,6 +53,8 @@ export default function Dropdown({
     () => getFilteredItems(options, selectedItems, inputValue),
     [selectedItems, inputValue],
   )
+  
+  // by default its a multiple Selectetion
 
   const {
     getSelectedItemProps, 
@@ -111,14 +117,18 @@ export default function Dropdown({
       switch (type) {
         case useCombobox.stateChangeTypes.InputKeyDownEnter:
         case useCombobox.stateChangeTypes.ItemClick:
-          setSelectedItems([...selectedItems, newSelectedItem])
+          // handle multi select or single select
+          if (multiSelect) {
+            setSelectedItems([...selectedItems, newSelectedItem])
+          } else {
+            setSelectedItems([newSelectedItem])
+          }        
           setOpenDropdownWrapper(false)
           break
         case useCombobox.stateChangeTypes.InputChange:
           setInputValue(newInputValue)
           break
         case useCombobox.stateChangeTypes.InputBlur: {
-          console.log('masuk sini')
           // tutup dropdown state berbarengan dengan 
           // downshift state
           if (!isOpen) {
@@ -249,6 +259,9 @@ export default function Dropdown({
               })}
             >
               {item}
+              
+              {/** remove btn jika multiple select */}
+              {multiSelect && (
               <span
                 className="p-1 cursor-pointer"
                 onClick={(e) => {
@@ -258,6 +271,7 @@ export default function Dropdown({
               >
                 &#9447;
               </span>
+              )}
             </span>
           ))}
         </div>

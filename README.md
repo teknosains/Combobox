@@ -8,6 +8,7 @@ Use it inside your component like this
   usePortal
   alwaysOpen
   clearAll={false}
+  multiSelect
 />
 ```
 
@@ -16,6 +17,7 @@ Use it inside your component like this
 - usePortal: **boolean**. Use as Portal or not
 - alwaysOpen: **boolean**. The dropdown list will always open from the first click. Otherwise, it only opens when the input search is clicked / filled
 - clearAll: **boolean**. If you want to have a clear / reset all features
+- multiSelect: **boolean**. Set to ```true``` If you want to have multiple selection feature
 
 ### Live Demo
 
@@ -23,14 +25,27 @@ Use it inside your component like this
 
 ### Screenshots
 
-<img width="738" alt="Screenshot 2025-02-02 at 02 54 47" src="https://github.com/user-attachments/assets/4bbf04e5-5891-41f1-9e37-5810cf35a83d" />
-<img width="738" alt="Screenshot 2025-02-02 at 02 55 12" src="https://github.com/user-attachments/assets/4182bfe9-713c-404e-b5ff-f6764cbae329" />
-<img width="738" alt="Screenshot 2025-02-02 at 02 54 31" src="https://github.com/user-attachments/assets/cc1acb5b-a8ed-4660-ab06-1140f815a98d" />
+<img width="400" alt="Screenshot 2025-02-02 at 02 54 47" src="https://github.com/user-attachments/assets/4bbf04e5-5891-41f1-9e37-5810cf35a83d" />
+<img width="400" alt="Screenshot 2025-02-02 at 02 55 12" src="https://github.com/user-attachments/assets/4182bfe9-713c-404e-b5ff-f6764cbae329" />
+<img width="400" alt="Screenshot 2025-02-02 at 02 54 31" src="https://github.com/user-attachments/assets/cc1acb5b-a8ed-4660-ab06-1140f815a98d" />
+
+### Installation
+
+Clone this repository to your local computer.
+
+run in your terminal
+```
+npm install
+```
 
 
-## Tailwind Setup
+## Tailwind Setup (if you have any issues configuring Tailwind in CRA)
+
+Use this guide from tailwind official
 
 https://v3.tailwindcss.com/docs/guides/create-react-app
+
+Note that im using tailwind v3. tried tailwind 4 with the latest CRA doesnt seem to work in my case.
 
 
 ## Combobox Libs

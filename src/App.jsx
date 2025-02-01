@@ -14,7 +14,13 @@ function App() {
     <div className="App">
       <h4 className="text-2xl mt-6">Combobox</h4>
       <div className="flex flex-col items-center justify-center">
-        <Dropdown options={options} usePortal alwaysOpen clearAll={false} />
+        <Dropdown 
+          options={options} 
+          usePortal 
+          alwaysOpen 
+          clearAll={false} 
+          multiSelect={false}
+        />
       </div>
     </div>
   );
