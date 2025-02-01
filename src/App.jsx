@@ -19,7 +19,7 @@ function App() {
           usePortal 
           alwaysOpen 
           clearAll={false} 
-          multiSelect={false}
+          multiSelect
         />
       </div>
     </div>
