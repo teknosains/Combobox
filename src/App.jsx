@@ -45,7 +45,7 @@ function App() {
         <div>
           <input type="checkbox" value="usePortal" 
             onChange={(e) => setConfig({ ...config, usePortal: e.target.checked })}
-          /> usePortal
+          /> usePortal (instead of normal React component)
         </div>
         <div>
           <input type="checkbox" value="alwaysOpen" 
