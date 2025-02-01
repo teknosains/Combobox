@@ -220,7 +220,7 @@ export default function Dropdown({
     const target = e.target
     if (target.tagName !== 'BUTTON') {
       setOpenDropdownWrapper(!openDropdownWrapper)
-      openMenu()
+      alwaysOpen && openMenu()
     }
   }
 

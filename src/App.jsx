@@ -14,7 +14,7 @@ function App() {
 
   const defaultConfig = {
     usePortal: false,
-    alwaysOpen: false,
+    alwaysOpen: true,
     clearAll: false,
     multiSelect: true
   };
@@ -50,6 +50,7 @@ function App() {
         <div>
           <input type="checkbox" value="alwaysOpen" 
             onChange={(e) => setConfig({ ...config, alwaysOpen: e.target.checked })}
+            defaultChecked
           /> alwaysOpen
         </div>
         <div>
