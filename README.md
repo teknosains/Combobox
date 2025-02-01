@@ -17,8 +17,11 @@ Use it inside your component like this
 - alwaysOpen: **boolean**. The dropdown list will always open from the first click. Otherwise, it only opens when the input search is clicked / filled
 - clearAll: **boolean**. If you want to have a clear / reset all features
 
+### Live Demo
 
-### Examples
+[https://combobox-one.vercel.app](https://combobox-one.vercel.app/)
+
+### Screenshots
 
 <img width="738" alt="Screenshot 2025-02-02 at 02 54 47" src="https://github.com/user-attachments/assets/4bbf04e5-5891-41f1-9e37-5810cf35a83d" />
 <img width="738" alt="Screenshot 2025-02-02 at 02 55 12" src="https://github.com/user-attachments/assets/4182bfe9-713c-404e-b5ff-f6764cbae329" />
