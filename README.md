@@ -1,3 +1,23 @@
+## Usage
+
+Use it inside your component like this
+
+```jsx
+<Dropdown
+  options={options}
+  usePortal
+  alwaysOpen
+  clearAll={false}
+/>
+```
+
+### Props
+- options: **string[]**. Your lists or options
+- usePortal: **boolean**. Use as Portal or not
+- alwaysOpen: **boolean**. The dropdown list will always open from the first click. Otherwise, it only opens when the input search is clicked / filled
+- clearAll: **boolean**. If you want to have a clear / reset all features
+
+
 ## Tailwind Setup
 
 https://v3.tailwindcss.com/docs/guides/create-react-app
