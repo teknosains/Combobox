@@ -243,7 +243,7 @@ export default function Dropdown({
       }
       <input type="hidden" value={selectedItems.join(',')} name="opsi" onChange={() => {} }/>
       <div
-        className="flex flex-row justify-between w-[600px] min-h-10 items-center p-2 border border-gray-300 rounded-md cursor-pointer hover:border-gray-400 hover:bg-gray-50"
+        className="flex flex-row justify-between w-full min-w-[450px] max-w-[600px] min-h-10 items-center p-2 border border-gray-300 rounded-md cursor-pointer hover:border-gray-400 hover:bg-gray-50"
         onClick={handleOpenDropdown}
       >
         <div 
