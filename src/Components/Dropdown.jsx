@@ -4,6 +4,8 @@ import IconChevronDown from './IconChevronDown'
 import IconChevronUp from './IconChevronUp'
 import clsx from 'clsx'
 import ReactDOM from 'react-dom'
+import IconSearch from './IconSearch'
+import IconClear from './IconClear'
 
 // harusnya pakai DOMPurify klo utk Prod mah
 function sanitizeHTML(unsafe) {
@@ -173,7 +175,7 @@ export default function Dropdown({
       
       <div className="relative">
         <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-          <svg className="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+          <IconSearch />
         </div>
         <input 
           type="text" 
@@ -188,7 +190,7 @@ export default function Dropdown({
         <button type="button" className="absolute inset-y-0 right-0 flex items-center pr-4"
           onClick={handleClearInput}
         >
-          <svg className="w-5 h-5 text-gray-500 dark:text-gray-400 hover:text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+          <IconClear />
         </button>
         )}
       </div>
