@@ -18,6 +18,13 @@ Use it inside your component like this
 - clearAll: **boolean**. If you want to have a clear / reset all features
 
 
+### Examples
+
+<img width="738" alt="Screenshot 2025-02-02 at 02 54 47" src="https://github.com/user-attachments/assets/4bbf04e5-5891-41f1-9e37-5810cf35a83d" />
+<img width="738" alt="Screenshot 2025-02-02 at 02 55 12" src="https://github.com/user-attachments/assets/4182bfe9-713c-404e-b5ff-f6764cbae329" />
+<img width="738" alt="Screenshot 2025-02-02 at 02 54 31" src="https://github.com/user-attachments/assets/cc1acb5b-a8ed-4660-ab06-1140f815a98d" />
+
+
 ## Tailwind Setup
 
 https://v3.tailwindcss.com/docs/guides/create-react-app
