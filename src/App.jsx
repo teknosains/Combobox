@@ -1,6 +1,6 @@
-import './App.css';
-import Dropdown from './Components/Dropdown';
-import React from 'react';
+import './App.css'
+import Dropdown from './Components/Dropdown'
+import React from 'react'
 
 const options = [
   'Contoh 1',
@@ -17,8 +17,9 @@ function App() {
     alwaysOpen: true,
     clearAll: false,
     multiSelect: true
-  };
-  const [config, setConfig] = React.useState(defaultConfig);
+  }
+
+  const [config, setConfig] = React.useState(defaultConfig)
 
   return (
     <div className="App">
@@ -66,7 +67,7 @@ function App() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
